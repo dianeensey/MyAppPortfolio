@@ -17,4 +17,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="AppButton" >
+        <item name="android:background">@color/button_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_bottom</item>
+        <item name="android:onClick">sendMessage</item>
+    </style>
+
 </resources>

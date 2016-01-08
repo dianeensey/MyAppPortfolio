@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,62 +11,48 @@
     tools:context="app.com.beyond_paper.myappportfolio.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/title_size"
-        android:textStyle="bold"
-        android:text="My Nanodegree Apps!"
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"    >
 
-        />
-    <Button
-        android:id="@+id/button_spotify"
-        android:background="@color/button_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:text="@string/button_spotify"
-        android:onClick="sendMessage" />
-    <Button
-        android:id="@+id/button_scores"
-        android:background="@color/button_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:text="@string/button_scores"
-        android:onClick="sendMessage" />
-    <Button
-        android:id="@+id/button_library"
-        android:background="@color/button_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:text="@string/button_library"
-        android:onClick="sendMessage" />
-    <Button
-        android:id="@+id/button_build"
-        android:background="@color/button_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:text="@string/button_build"
-        android:onClick="sendMessage" />
-    <Button
-        android:id="@+id/button_reader"
-        android:background="@color/button_background"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:text="@string/button_reader"
-        android:onClick="sendMessage" />
-    <Button
-        android:id="@+id/button_capstone"
-        android:background="@color/colorAccent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/button_capstone"
-        android:onClick="sendMessage" />
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:text="@string/title_buttons"
+
+            />
+        <Button
+            android:id="@+id/button_spotify"
+            style="@style/AppButton"
+            android:text="@string/button_spotify"/>
+        <Button
+            android:id="@+id/button_scores"
+            style="@style/AppButton"
+            android:text="@string/button_scores"/>
+        <Button
+            android:id="@+id/button_library"
+            style="@style/AppButton"
+            android:text="@string/button_library" />
+        <Button
+            android:id="@+id/button_build"
+            android:background="@color/button_background"
+            style="@style/AppButton"
+            android:text="@string/button_build" />
+        <Button
+            android:id="@+id/button_reader"
+            style="@style/AppButton"
+            android:text="@string/button_reader"/>
+        <Button
+            android:id="@+id/button_capstone"
+            style="@style/AppButton"
+            android:background="@color/colorAccent"
+            android:text="@string/button_capstone" />
+
+    </LinearLayout>
+</ScrollView>
